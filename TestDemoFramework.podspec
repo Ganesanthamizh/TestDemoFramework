@@ -31,7 +31,7 @@ This CocoaPods library helps you perform calculation.
   spec.swift_version = "4.2"
 
 
-  spec.source        = { :git => "https://github.com/Ganesanthamizh/TestDemoFramework.git", :tag => "#{spec.version}" }
+  spec.source        = { :git => "https://github.com/Ganesanthamizh/TestDemoFramework.git", :tag => spec.version.to_s }
 
   spec.source_files  = "TestDemoFramework/**/*.{h,m,swift}"
 

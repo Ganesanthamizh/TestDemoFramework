@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		CE055A692476B1D50039FF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE055A672476B1D50039FF14 /* LaunchScreen.storyboard */; };
 		CE055A742476B1D50039FF14 /* TestDemoFrameworkExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE055A732476B1D50039FF14 /* TestDemoFrameworkExampleTests.swift */; };
 		CE055A7E2476B3BA0039FF14 /* Testfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE055A7D2476B3BA0039FF14 /* Testfile.swift */; };
+		CEEF282C2476DC5700CB8F4F /* TestDemoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE055A3C2476B16E0039FF14 /* TestDemoFramework.framework */; };
+		CEEF282D2476DC5700CB8F4F /* TestDemoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE055A3C2476B16E0039FF14 /* TestDemoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5DC686831C4750308283B69 /* Pods_TestDemoFrameworkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCDF1C119A6D69C3CABA5B1 /* Pods_TestDemoFrameworkExample.framework */; };
 		E61DF8D124C1E2BEECE97C04 /* Pods_TestDemoFrameworkExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B39FE4B31D0B1847116114 /* Pods_TestDemoFrameworkExampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -39,7 +41,28 @@
 			remoteGlobalIDString = CE055A592476B1D40039FF14;
 			remoteInfo = TestDemoFrameworkExample;
 		};
+		CEEF282E2476DC5700CB8F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE055A332476B16E0039FF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE055A3B2476B16E0039FF14;
+			remoteInfo = TestDemoFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEEF28302476DC5700CB8F4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEEF282D2476DC5700CB8F4F /* TestDemoFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2BCDF1C119A6D69C3CABA5B1 /* Pods_TestDemoFrameworkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemoFrameworkExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEF282C2476DC5700CB8F4F /* TestDemoFramework.framework in Frameworks */,
 				D5DC686831C4750308283B69 /* Pods_TestDemoFrameworkExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +232,6 @@
 				C40E3669FFD772487753EB7A /* Pods-TestDemoFrameworkExampleTests.debug.xcconfig */,
 				40A083A0D44E22CC2EEA85DF /* Pods-TestDemoFrameworkExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -274,10 +297,12 @@
 				CE055A572476B1D40039FF14 /* Frameworks */,
 				CE055A582476B1D40039FF14 /* Resources */,
 				26F301AD62244CC25577934A /* [CP] Embed Pods Frameworks */,
+				CEEF28302476DC5700CB8F4F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEEF282F2476DC5700CB8F4F /* PBXTargetDependency */,
 			);
 			name = TestDemoFrameworkExample;
 			productName = TestDemoFrameworkExample;
@@ -556,6 +581,11 @@
 			isa = PBXTargetDependency;
 			target = CE055A592476B1D40039FF14 /* TestDemoFrameworkExample */;
 			targetProxy = CE055A702476B1D50039FF14 /* PBXContainerItemProxy */;
+		};
+		CEEF282F2476DC5700CB8F4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE055A3B2476B16E0039FF14 /* TestDemoFramework */;
+			targetProxy = CEEF282E2476DC5700CB8F4F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

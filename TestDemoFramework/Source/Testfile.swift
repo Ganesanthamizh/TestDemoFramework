@@ -8,7 +8,10 @@
 
 import Foundation
 
-public final class TestFile {
+open class TestFile {
+    public init() {
+        
+    }
     let name = "Testfile"
     
     public func add(a: Int, b: Int) -> Int {
